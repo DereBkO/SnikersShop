@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/*--------------------  Шапка  --------------------*/
+.header__content {
+  background-color: none;
+  padding: 25px 0 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.header__logo {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*--------------------  Меню  --------------------*/
+.menu__list {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+.menu__link {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .menu__link {
+    display: block;
+    font-size: 30px;
+    line-height: 70px;
+  }
+}
+
+.header__users {
+  display: flex;
+}
+
+.header__search {
+  position: relative;
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+}
+.header__search::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -2px;
+  left: -34px;
+  background: url("../img/icons/lupa.svg") center center/cover no-repeat;
+}
+
+.logreg {
+  margin-left: 40px;
+  display: flex;
+}
+
+.login {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.login:hover {
+  text-decoration: underline;
+}
+
+.slesh {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.reg {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.reg:hover {
+  text-decoration: underline;
+}
+
+.user {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.exit {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+.exit:hover {
+  text-decoration: underline;
+}
+
+.header__avatar {
+  margin-left: 44px;
+}
+
+.header__like {
+  margin-left: 30px;
+}
+
+.promo {
+  position: relative;
+  top: -98px;
+  min-height: 950px;
+  background: linear-gradient(rgba(221, 160, 221, 0.5), rgba(221, 160, 221, 0.5)), url("../img/img/snikers.png") center center/cover no-repeat;
+}
+
+.promo__text {
+  padding-top: 600px;
+  font-family: NotoSerif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.promo__btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+  width: 261px;
+  height: 51px;
+  background-color: rgba(221, 160, 221, 0.3);
+  border: 1px solid #fff;
+  cursor: pointer;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.promo__btn:hover {
+  background-color: rgba(221, 160, 221, 0.6);
+}
+
+.promo__line {
+  margin-top: 80px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.promo__image {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.katalog__content {
+  padding: 0 0 120px 0;
+}
+
+.katalog__title {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+  color: #333;
+}
+
+.katalog__subtitle {
+  margin-top: 15px;
+  font-family: NotoSerif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.katalog__image {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.katalog__image:last-child {
+  margin-top: 30px;
+}
+.katalog__image_img {
+  position: relative;
+  width: 350px;
+  height: 280px;
+}
+.katalog__image_img_1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/jordan.jpg") center center/cover no-repeat;
+}
+.katalog__image_img_2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/nike_air.jpg") center center/cover no-repeat;
+}
+.katalog__image_img_3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/adidas_og.jpg") center center/cover no-repeat;
+}
+.katalog__image_img_4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/bathing_ape.jpg") center center/cover no-repeat;
+}
+.katalog__image_img_5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/converse.jpg") center center/cover no-repeat;
+}
+.katalog__image_img_6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/img/new__balance.jpg") center center/cover no-repeat;
+}
+
+.katalog__text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Gilroy;
+  font-display: swap;
+  src: url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: NotoSerif;
+  font-display: swap;
+  src: url("../fonts/NotoSerif-Bold.woff2") format("woff2"), url("../fonts/NotoSerif-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  font-family: "Gilroy", "NotoSerif", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: normal;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  background-color: #fff;
+  color: #fff;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
